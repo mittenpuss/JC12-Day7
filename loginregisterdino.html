@@ -1,0 +1,36 @@
+<html>
+    <script>
+    
+    var data=["dino","ali"]
+    var ulang=true
+    while(ulang){
+        var menuutama=prompt("1.login\n2.register\n3.exit")
+        if(menuutama==1){
+            var taronama=prompt("Masukkan username: ")
+            var adadata=false
+            for (var i=0;i<data.length;i++){
+                if(taronama==data[i])
+                adadata=true
+            }
+        
+        if(adadata){
+            alert("berhasil login")
+            ulang=false
+        }else{
+            alert("data tidak sesuai silahkan register")
+        }
+
+        }else if(menuutama==2){
+            var masukannama=prompt("Masukkan nama")
+            data.push(masukannama)
+            alert("data berhasil register")
+        }else{
+            alert("terimakasih sudah menggunakan aplikasi ini")
+            ulang=false
+        }
+    }    
+
+
+    
+    </script>
+</html>
